@@ -34,7 +34,7 @@ server.get("/search-results", (req, res) => {
 
         const total = rows.length
 
-        return res.render("search-results.html", { places: rows, total })
+        return res.render("search-results.html", { places: rows, total: total })
     })
 })
 

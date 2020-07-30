@@ -28,11 +28,12 @@
 }
 
 #modal .header a {
-    color: #a04848;
-    width: 10px;    
-    height: 10px;
+    background: url("/styles/times-solid.svg") no-repeat;
+    width: 15px;    
+    height: 20px;
     display: flex;
-    font-size: 16px;
+    justify-items: center;
+    font-size: 0.01px;
 }
 
 #modal .header h1 {

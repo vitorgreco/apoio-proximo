@@ -1,20 +1,39 @@
 @media (max-width: 900px) {
-    #page-home{
-        background-position: 70vw;
+    #page-home {
+        height: 120vh;
     }
 
+    #page-home img {
+        display: flex;
+        width: -webkit-fill-available;
+    }  
+
     #page-home .content {
+        display: block;
         align-items: center;
         text-align: center;
     }
 
-    #page-home header a {
-        position: absolute;
-        bottom: 48px;
-        left: 50%;
-        transform: translateX(-50%);
+    #page-home .content h2 {
+        font-size: 30px;
+        margin-top: 30px;
     }
+
+    #page-home .add {
+        margin-top: 10px;
+    }
+
     #page-home main {
         align-items: center;
     }
+
+    #page-home main h1 {
+        font-size: 50px;  
+        margin-top: 25px;
+    }
+
+    #page-home .button {
+        display: block;
+    }  
+
 }

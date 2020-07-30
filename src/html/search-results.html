@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt_br">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pontos de apoio</title>
 
     <link
       href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap"
       rel="stylesheet"
-    />
+    >
 
-    <link rel="stylesheet" href="/css/main.css" />
-    <link rel="stylesheet" href="/css/search-results.css" />
-    <link rel="stylesheet" href="/css/responsive.css" />
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/search-results.css">
+    <link rel="stylesheet" href="/css/responsive.css">
   </head>
   <body>
     <div id="page-search-results">
@@ -23,17 +23,20 @@
           alt="Serviço amigo, logomarca"
         />
 
-        <h2>Ajude e seja ajudado</h2>
+        <h2>Ajude ou seja ajudado</h2>
 
         <a href="/">
           <span> </span> <strong>voltar</strong>
         </a>
       </header>
-
+      
       <main>
 
+      {% if total > 0 %}    
+
         <h4>
-          <strong>{{total}}</strong>
+          <strong>{{total}} pontos</strong>
+          encontrados
         </h4>
 
         <div class="cards">
@@ -53,8 +56,15 @@
           {% endfor %}
 
         </div>
-      </main>
+      
+      {% else %}
+      
+      <h4><strong>Nenhum</strong>Local encontrado</h4>
 
+      {% endif %}
+      
+      </main>
+      
     </div>
   </body>
 </html>
