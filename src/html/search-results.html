@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pontos de apoio</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/search-results.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+  </head>
+  <body>
+    <div id="page-search-results">
+      <header>
+        <img
+          src="/styles/Logo SA sem fundo.png"
+          width="250px"
+          alt="Serviço amigo, logomarca"
+        />
+
+        <h2>Ajude e seja ajudado</h2>
+
+        <a href="/">
+          <span> </span> <strong>voltar</strong>
+        </a>
+      </header>
+
+      <main>
+
+        <h4>
+          <strong>{{total}}</strong>
+        </h4>
+
+        <div class="cards">
+
+          {% for place in places %}
+          
+            <div class="card">
+              <img src="" alt="">
+              <h1>{{ place.name }}</h1>
+              <h3>{{ place.items }}</h3>
+              <p>{{ place.city }}, {{ place.state }}
+                </br>
+                {{ place.address }}, {{ place.address2 }}
+              </p>
+            </div>
+
+          {% endfor %}
+
+        </div>
+      </main>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+:root {
+    --title-color: #00CED1;
+    --primary-color: #dcf6ff;
+    --after-color: #a4ffff;
+    --text-color: #2F4F4F;
+    --back-color: #0564641a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {font-family: 'Balsamiq Sans', cursive;}
+
+body{
+    background: #0564641a;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+}
+

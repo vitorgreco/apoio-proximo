@@ -1,0 +1,115 @@
+#page-home {
+    height: 98vh;
+    background: url('/styles/Apoio\ proximo.png') no-repeat;
+    background-position: bottom;
+    margin: 0px 20px 0px 20px;
+}
+
+#page-home .content { 
+    width: 72%;
+    margin: 0 auto;
+}
+
+#page-home .content h2 {
+    font-size: 36px;
+    text-align: center;
+}
+
+#page-home main h1 {
+    max-width: 100%;
+    font-size: 60px;
+    color: var(--title-color);
+    margin-top: 50px;
+    text-align: center;
+}
+
+#page-home main p {
+    font-size: 20px;
+    color: var(--text-color);
+    margin-top: 35px;
+    text-align: center;
+}
+
+#page-home .button {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+    gap: 50%;
+}
+
+#page-home .search a {
+    width: 110%;
+    background: var(--primary-color);
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 25px;
+    height: 50px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    transition: 1200ms;
+}
+
+#page-home .search a:hover {
+    background-color: var(--after-color);
+}
+
+#page-home .search a span {
+    width: 50px;
+    height: 100%;
+    background-color: var(--after-color);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page-home .search a span::after {
+    content:"";
+    background-image: url('/styles/search-location-solid.svg');
+    width: 25px;
+    height: 25px;
+    
+}
+#page-home .search a strong {
+    flex: 1;
+    text-align: center;
+}
+
+
+#page-home .add a {
+    width: 110%;
+    background: var(--primary-color);
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 25px;
+    height: 50px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    transition: 1200ms;
+}
+
+#page-home .add a:hover {
+    background-color: var(--after-color);
+}
+
+#page-home .add a span {
+    width: 50px;
+    height: 100%;
+    background-color: var(--after-color);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page-home .add a span::after {
+    content:"";
+    background-image: url('/styles/plus-solid.svg');
+    width: 25px;
+    height: 30px;
+    
+}
+#page-home .add a strong {
+    flex: 1;
+    text-align: center;
+}
