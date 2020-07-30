@@ -1,14 +1,12 @@
 @media (max-width: 900px) {
-    #page-home {
-        height: 140vh;
-    }
-
+ 
     #page-home img {
         display: flex;
         width: -webkit-fill-available;
     }  
 
     #page-home .content {
+        width: 350px;
         display: block;
         align-items: center;
         text-align: center;
@@ -35,5 +33,4 @@
     #page-home .button {
         display: block;
     }  
-
 }
