@@ -33,4 +33,21 @@
     #page-home .button {
         display: block;
     }  
+
+    #page-create-point header {
+        display: block;
+        /* text-align: center;
+        transform: translateX(50%); */
+    }
+    #page-create-point a {
+        display: none;
+    }
+    #page-create-point header h2 {
+        display: none;
+    }
+    #page-create-point header img {
+        display: flex;
+        width: 100%;
+        width: -webkit-fill-available;
+    }
 }
