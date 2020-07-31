@@ -13,8 +13,8 @@
     color: var(--text-color);
 }
 
-#page-search-results header a {
-    width: 260px;
+#page-search-results a {
+    width: 135px;
     background: var(--primary-color);
     color: var(--title-color);
     font-weight: 700;
@@ -24,6 +24,28 @@
     display: flex;
     align-items: center;
     transition: 1200ms;
+}
+#page-search-results a:hover {
+    background-color: var(--after-color);
+}
+#page-search-results a span {
+    width: 50px;
+    height: 100%;
+    background-color: var(--after-color);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page-search-results a span::after {
+    content:"";
+    background-image: url('/styles/undo-solid.svg');
+    width: 25px;
+    height: 25px;
+}
+#page-search-results a strong {
+    flex: 1;
+    text-align: center;
 }
 
 main {
