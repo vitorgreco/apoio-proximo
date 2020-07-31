@@ -7,20 +7,20 @@ const db = new sqlite3.Database("./src/database/database.db")
 module.exports = db
 
 // utilizar o objeto de banco de daos, para nossas operações
-// db.serialize(() => {
-//     // comandos SQL:
-//     // criar uma tabela
-//     db.run(`
-//         CREATE TABLE IF NOT EXISTS places (
-//             id INTEGER PRIMARY KEY AUTOINCREMENT,
-//             name TEXT,
-//             address TEXT,
-//             address2 TEXT,
-//             state TEXT,
-//             city TEXT,
-//             items TEXT
-//         );
-//     `)
+db.serialize(() => {
+    // comandos SQL:
+    // criar uma tabela
+    db.run(`
+        CREATE TABLE IF NOT EXISTS places (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            name TEXT,
+            address TEXT,
+            address2 TEXT,
+            state TEXT,
+            city TEXT,
+            items TEXT
+        );
+    `)
 
 
 
@@ -71,4 +71,4 @@ module.exports = db
     //     console.log("Registro deletado com sucesso!")
     // })
 
-// })
+})
