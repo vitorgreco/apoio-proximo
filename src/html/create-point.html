@@ -10,9 +10,10 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="/css/main.css" />
-    <link rel="stylesheet" href="/css/create-point.css" />
-    <link rel="stylesheet" href="/css/responsive.css" />
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/create-point.css">
+    <link rel="stylesheet" href="/css/modal.css">
+    <link rel="stylesheet" href="/css/responsive.css">
   </head>
   <body>
     <div id="page-create-point">
@@ -30,7 +31,7 @@
         </a>
       </header>
 
-      <form action="">
+      <form action="/savepoint" method="POST">
         
         <h1>Cadastro</h1>
 
@@ -79,32 +80,32 @@
             </legend>
 
                 <div class="items-grid">
-                    <li data-id="1">
+                    <li data-id="Alimento">
                       <img src="/styles/utensils-solid.svg" alt="Mecânico">
                       <span>Alimento</span>
                     </li>
 
-                    <li data-id="2">
+                    <li data-id="Brinquedo">
                       <img src="/styles/dice-solid.svg" alt="Montagem">
                       <span>Brinquedo</span>
                     </li>
 
-                    <li data-id="3">
+                    <li data-id="Higiene">
                       <img src="/styles/pump-soap-solid.svg" alt="hidráulico">
                       <span>Higiene</span>
                     </li>
                   
-                    <li data-id="4">
+                    <li data-id="Livro">
                       <img src="/styles/book-solid.svg" alt="Pintor">
                       <span>Livro</span>
                     </li>
 
-                    <li data-id="5">
+                    <li data-id="Roupa">
                       <img src="/styles/tshirt-solid.svg" alt="Elétrico">
                       <span>Roupa</span>
                     </li>
 
-                    <li data-id="6">
+                    <li data-id="Voluntario">
                       <img src="/styles/users-solid.svg" alt="Transporte">
                       <span>Voluntario</span>
                     </li>
@@ -119,6 +120,11 @@
         
       </form>
     </div>
+
+    {% if saved %}
+        {%include "partials/point-created.html"%}
+    {% endif %}
+
     <script src="/scripts/create-point.js"></script>
   </body>
 </html>
