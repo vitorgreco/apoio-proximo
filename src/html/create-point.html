@@ -1,130 +1,114 @@
-<!DOCTYPE html>
-<html lang="pt_br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cadastro</title>
+{% extends "layout.html" %}
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap"
-      rel="stylesheet"
-    />
+{% set pageId = "page-create-point" %}
 
-    <link rel="stylesheet" href="/css/main.css">
+{% block title %}
+  <title>Cadastro</title>
+{% endblock title %}
+
+{% block styles %}
     <link rel="stylesheet" href="/css/create-point.css">
     <link rel="stylesheet" href="/css/modal.css">
-    <link rel="stylesheet" href="/css/responsive.css">
-  </head>
-  <body>
-    <div id="page-create-point">
-      <header>
-        <img
-          src="/styles/logo apoio proximo2.png"
-          width="250px"
-          alt="Serviço amigo, logomarca"
-        />
+{% endblock styles %}
 
-        <h2>Ajude ou seja ajudado</h2>
+{% block content %}
 
-        <a href="/">
-          <span> </span> <strong>Voltar</strong>
-        </a>
-      </header>
+  {% include "partials/page-header.html" %}
 
-      <form action="/savepoint" method="POST">
+  <form action="/savepoint" method="POST">
+    
+    <h1>Cadastro</h1>
+
+    <fieldset>
+
+      <div class="field">
+        <label for="name">Nome do local</label>
+        <input type="text" name="name" required />
+      </div>
+
+      <div class="field-group">
+        <div class="field">
+          <label for="state">Estado</label>
+          <select name="uf" required>
+            <option value="">Selecione o Estado</option>
+          </select>
+
+          <input type="hidden" name="state">
+        </div>
+      
+        <div class="field">
+          <label for="city">Cidade</label>
+          <select name="city" disabled required>
+            <option value="">Selecione a Cidade</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field-group">
+        <div class="field">
+          <label for="address">Endereço</label>
+          <input type="text" name="address" required />
+        </div>
+        <div class="field">
+          <label for="address2">Número</label>
+          <input type="number" name="address2" required />
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+
+      <legend>
+        <h2>Coletas</h2>
+        <p>Selecione um ou mais itens abaixo</p>
+      </legend>
+
+      <div class="items-grid">
+          <li data-id="Alimento">
+            <img src="/styles/utensils-solid.svg" alt="Mecânico">
+            <span>Alimento</span>
+          </li>
+
+          <li data-id="Brinquedo">
+            <img src="/styles/dice-solid.svg" alt="Montagem">
+            <span>Brinquedo</span>
+          </li>
+
+          <li data-id="Higiene">
+            <img src="/styles/pump-soap-solid.svg" alt="hidráulico">
+            <span>Higiene</span>
+          </li>
         
-        <h1>Cadastro</h1>
+          <li data-id="Livro">
+            <img src="/styles/book-solid.svg" alt="Pintor">
+            <span>Livro</span>
+          </li>
 
-        <fieldset>
+          <li data-id="Roupa">
+            <img src="/styles/tshirt-solid.svg" alt="Elétrico">
+            <span>Roupa</span>
+          </li>
 
-          <div class="field">
-            <label for="name">Nome do local</label>
-            <input type="text" name="name" required />
-          </div>
+          <li data-id="Voluntario">
+            <img src="/styles/users-solid.svg" alt="Transporte">
+            <span>Voluntario</span>
+          </li>
 
-          <div class="field-group">
-            <div class="field">
-              <label for="state">Estado</label>
-              <select name="uf" required>
-                <option value="">Selecione o Estado</option>
-              </select>
+      </div>
 
-              <input type="hidden" name="state">
-            </div>
-          
-            <div class="field">
-              <label for="city">Cidade</label>
-              <select name="city" disabled required>
-                <option value="">Selecione a Cidade</option>
-              </select>
-            </div>
-          </div>
+      <input type="hidden" name="items">
 
-          <div class="field-group">
-            <div class="field">
-              <label for="address">Endereço</label>
-              <input type="text" name="address" required />
-            </div>
-            <div class="field">
-              <label for="address2">Número</label>
-              <input type="number" name="address2" required />
-            </div>
-          </div>
-        </fieldset>
+    </fieldset>
 
-        <fieldset>
-
-            <legend>
-              <h2>Coletas</h2>
-              <p>Selecione um ou mais itens abaixo</p>
-            </legend>
-
-                <div class="items-grid">
-                    <li data-id="Alimento">
-                      <img src="/styles/utensils-solid.svg" alt="Mecânico">
-                      <span>Alimento</span>
-                    </li>
-
-                    <li data-id="Brinquedo">
-                      <img src="/styles/dice-solid.svg" alt="Montagem">
-                      <span>Brinquedo</span>
-                    </li>
-
-                    <li data-id="Higiene">
-                      <img src="/styles/pump-soap-solid.svg" alt="hidráulico">
-                      <span>Higiene</span>
-                    </li>
-                  
-                    <li data-id="Livro">
-                      <img src="/styles/book-solid.svg" alt="Pintor">
-                      <span>Livro</span>
-                    </li>
-
-                    <li data-id="Roupa">
-                      <img src="/styles/tshirt-solid.svg" alt="Elétrico">
-                      <span>Roupa</span>
-                    </li>
-
-                    <li data-id="Voluntario">
-                      <img src="/styles/users-solid.svg" alt="Transporte">
-                      <span>Voluntario</span>
-                    </li>
-
-                </div>
-
-                <input type="hidden" name="items">
-
-        </fieldset>
-
-        <button type="submit">Enviar</button>
-        
-      </form>
-    </div>
+    <button type="submit">Enviar</button>
+    
+  </form>
+{% endblock content %}
 
     {% if saved %}
         {%include "partials/point-created.html"%}
     {% endif %}
 
+{% block scripts %}
     <script src="/scripts/create-point.js"></script>
-  </body>
-</html>
+{% endblock scripts %}
