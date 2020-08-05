@@ -70,7 +70,6 @@ server.post("/savepoit", (req, res) => {
     }
     db.run(query, values, afterInsertData)
 
-
 })
 
 
