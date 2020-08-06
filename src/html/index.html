@@ -8,42 +8,40 @@
 {% endblock styles %}
 
 {% block content %}
-    <img src="/styles/logo apoio proximo2.png" width= 250px alt="Serviço amigo, logomarca">
     
-    <div class="content">
+    <div class="content">  
+    
+        <div class="logo">
+            <img src="/styles/logo apoio proximo2.png" width= 300px alt="Serviço amigo, logomarca"> 
+        </div>
         
         <header>
-                                
+            
             <h2>Ajude ou seja ajudado  </h2>             
 
-        </header>
-
-        <main>
-                                    
-            <h1>Nosso marketplace da solidariedade</h1>               
-
             <p>Localizamos o ponto de apoio mais próximo de você</p>
-                
-        </main>
-        <div class="button">
-            <div class="search">
-                <a href="#">
-                    <span> </span> <strong>Pesquisar pontos de apoio</strong> 
-                </a>
-            </div>
-
-            <div class="add">
-                <a href="/create-point">
-                    <span></span><strong>Adicionar ponto de apoio</strong>
-                </a> 
-
-            </div>
-        </div>   
-    </div>
     
-    <div class="img">
-        <img src="/styles/Apoio proximo.png" alt="">
+            <div class="button">
+                <div class="search">
+                    <a href="#">
+                        <span> </span> <strong>Pesquisar pontos de apoio</strong> 
+                    </a>
+                </div>
+
+                <div class="add">
+                    <a href="/create-point">
+                        <span></span><strong>Adicionar ponto de apoio</strong>
+                    </a> 
+
+                </div>
+            </div>  
+        
+            <div class="img">
+                <img src="/styles/Apoio proximo.png" alt="">
+            </div>
+        </header>
     </div>
+
 {% endblock content %}
 
 {% block modal %}

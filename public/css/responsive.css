@@ -1,12 +1,22 @@
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
  
-    #page-home img {
+    #page-home .img {
+        position: initial;
         display: flex;
-        width: -webkit-fill-available;
-    }  
+        justify-content: center;
+    } 
+
+    #page-home header {
+        margin-top: auto;
+    }
+
+    #page-home .logo {
+        display: flex;
+        justify-content: center;
+    }
 
     #page-home .content {
-        width: 350px;
+        width: max-content;
         display: block;
         align-items: center;
         text-align: center;
@@ -25,13 +35,8 @@
         align-items: center;
     }
 
-    #page-home main h1 {
-        font-size: 50px;  
-        margin-top: 25px;
-    }
-
     #page-home .button {
-        display: block;
+        justify-content: center;
     }  
 
     #page-create-point header {
