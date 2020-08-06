@@ -41,20 +41,26 @@ server.post("/savepoint", (req, res) => {
     const query = `
         INSERT INTO places (
             name,
-            address,
-            address2,
             state,
             city,
+            address,
+            address2,
+            address3,
+            complement,
+            image,
             items
-        ) VALUES (?,?,?,?,?,?);
+        ) VALUES (?,?,?,?,?,?,?,?,?);
     `
 
     const values = [
         req.body.name,
-        req.body.address,
-        req.body.address2,
         req.body.state,
         req.body.city,
+        req.body.address,
+        req.body.address2,
+        req.body.address3,
+        req.body.complement,
+        req.body.image,
         req.body.items
     ]
 
