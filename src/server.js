@@ -27,14 +27,14 @@ server.get("/", (req, res) => {
 
 server.get("/create-point", (req, res) => {
     // req.query: query strings da nossa url
-    // console.log(req.query)
+    console.log(req.query)
     
     return res.render("create-point.html")
 })
 
-server.post("/savepoit", (req, res) => {
+server.post("/savepoint", (req, res) => {
     // req.body: o corpo do nosso formulário
-    // console.log(req.body)
+    console.log(req.body)
 
     // inserir dados no banco de dados
         // inserir dados na tabela
