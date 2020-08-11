@@ -20,6 +20,8 @@ db.serialize(() => {
     //         address2 TEXT,
     //         address3 TEXT,
     //         complement TEXT,
+    //         tel TEXT,
+    //         website TEXT,
     //         image TEXT,
     //         items TEXT
     //     );
@@ -37,9 +39,11 @@ db.serialize(() => {
     //         address2,
     //         address3,
     //         complement,
+    //         tel,
+    //         website,
     //         image,
     //         items
-    //     ) VALUES (?,?,?,?,?,?,?,?,?);
+    //     ) VALUES (?,?,?,?,?,?,?,?,?,?,?);
     // `
 
     // const values = [
@@ -49,8 +53,10 @@ db.serialize(() => {
     //     "Parque dos Pássaros",
     //     "Av. das Araras",
     //     "800",
-    //     "2",
-    //     "https://lh3.googleusercontent.com/proxy/XlP1Uh0S-maS2J1Km3OECQvBuQgkBG4dgh3Aw9IK-HwsGnMeBrFa04rCyga8BTH9-0ZavukZ3JZz_xNJGhxqtRYWNg",
+    //     "",
+    //     "1123742300",
+    //     "http://www.sapp.com.br/",
+    //     "http://www.sapp.com.br/images/logo-sapp.png",
     //     "Alimento"
     // ]
 
