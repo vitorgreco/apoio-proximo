@@ -18,6 +18,7 @@
 #page-home header h2 {
     font-size: 50px;
     padding-top: 30px;
+    color: var(--title-color);
 }
 
 #page-home header p {
@@ -36,7 +37,7 @@
 #page-home .search a {
     width: 110%;
     background: var(--primary-color);
-    color: var(--title-color);
+    color: black;
     font-weight: 700;
     font-size: 25px;
     height: 50px;
@@ -76,7 +77,7 @@
 #page-home .add a {
     width: 110%;
     background: var(--primary-color);
-    color: var(--title-color);
+    color: black;
     font-weight: 700;
     font-size: 25px;
     height: 50px;

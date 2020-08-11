@@ -1,9 +1,13 @@
 :root {
-    --title-color: #00CED1;
+    --title-color: #38b0c0;
     --primary-color: #dcf6ff;
     --after-color: #a4ffff;
     --text-color: #2F4F4F;
     --back-color: #0564641a;
+    --second-color: #caf8e5;
+    --after-second-color: #8bffd3;
+    --click-color: #47f2f5;
+
 }
 
 * {
