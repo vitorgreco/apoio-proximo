@@ -8,8 +8,8 @@ module.exports = db
 
 // utilizar o objeto de banco de daos, para nossas operações
 db.serialize(() => {
-    // comandos SQL:
-    // criar uma tabela
+    // // comandos SQL:
+    // // criar uma tabela
     // db.run(`
     //     CREATE TABLE IF NOT EXISTS places (
     //         id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -28,40 +28,40 @@ db.serialize(() => {
 
 
 //  // inserir dados na tabela
-    const query = `
-        INSERT INTO places (
-            name,
-            state,
-            city,
-            address,
-            address2,
-            address3,
-            complement,
-            image,
-            items
-        ) VALUES (?,?,?,?,?,?,?,?,?);
-    `
+    // const query = `
+    //     INSERT INTO places (
+    //         name,
+    //         state,
+    //         city,
+    //         address,
+    //         address2,
+    //         address3,
+    //         complement,
+    //         image,
+    //         items
+    //     ) VALUES (?,?,?,?,?,?,?,?,?);
+    // `
 
-    const values = [
-        "Sociedade Amigos Parque dos Pássaros",
-        "São Paulo",
-        "São Bernardo",
-        "Parque dos Pássaros",
-        "Av. das Araras",
-        "800",
-        "2",
-        "https://lh3.googleusercontent.com/proxy/XlP1Uh0S-maS2J1Km3OECQvBuQgkBG4dgh3Aw9IK-HwsGnMeBrFa04rCyga8BTH9-0ZavukZ3JZz_xNJGhxqtRYWNg",
-        "Alimento"
-    ]
+    // const values = [
+    //     "Sociedade Amigos Parque dos Pássaros",
+    //     "São Paulo",
+    //     "São Bernardo",
+    //     "Parque dos Pássaros",
+    //     "Av. das Araras",
+    //     "800",
+    //     "2",
+    //     "https://lh3.googleusercontent.com/proxy/XlP1Uh0S-maS2J1Km3OECQvBuQgkBG4dgh3Aw9IK-HwsGnMeBrFa04rCyga8BTH9-0ZavukZ3JZz_xNJGhxqtRYWNg",
+    //     "Alimento"
+    // ]
 
-    function afterInsertData(err) {
-        if(err) {
-            return console.log(err)
-        }
-        console.log("Cadastrado com sucesso")
-        console.log(this)
-    }
-    db.run(query, values, afterInsertData)
+    // function afterInsertData(err) {
+    //     if(err) {
+    //         return console.log(err)
+    //     }
+    //     console.log("Cadastrado com sucesso")
+    //     console.log(this)
+    // }
+    // db.run(query, values, afterInsertData)
 
 
 

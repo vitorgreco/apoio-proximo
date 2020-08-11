@@ -47,9 +47,11 @@ server.post("/savepoint", (req, res) => {
             address2,
             address3,
             complement,
+            tel,
+            website,
             image,
             items
-        ) VALUES (?,?,?,?,?,?,?,?,?);
+        ) VALUES (?,?,?,?,?,?,?,?,?,?,?);
     `
 
     const values = [
@@ -60,6 +62,8 @@ server.post("/savepoint", (req, res) => {
         req.body.address2,
         req.body.address3,
         req.body.complement,
+        req.body.tel,
+        req.body.website,
         req.body.image,
         req.body.items
     ]
