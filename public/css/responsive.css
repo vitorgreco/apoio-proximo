@@ -1,23 +1,42 @@
-@media (max-width: 738px) {
+@media (max-width: 768px) {
+
+    #page-home {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #page-home header h2 {
+      padding-top: unset;
+    }
  
     #page-home .img {
         position: initial;
         display: flex;
         justify-content: center;
         margin-top: 20px;
-    } 
-
-    #page-home header {
-        margin-top: auto;
     }
 
-    #page-home .logo {
+    #page-home .img img{
+      width: 100%;
+    }
+
+    #page-home header {
+      margin-top: auto;
+      width: unset;
+    }
+
+    #page-home .logo {      
         display: flex;
         justify-content: center;
     }
 
+    #page-home .logo img {      
+      width: 100%;
+    }
+
     #page-home .content {
-        width: max-content;
+        width: 80%;
         display: block;
         align-items: center;
         text-align: center;
@@ -38,7 +57,30 @@
 
     #page-home .button {
         justify-content: center;
-    }  
+        width: 100%;
+        margin-top: 20px;
+        grid-template-columns: 100%;
+    }
+
+    #page-home .button .search {
+      width: 100%;
+    }
+
+    #page-home .search a {
+      width: 100%;
+    }
+
+    #page-home .search a strong {
+      font-size: 0.7em;
+    }
+
+    #page-home .add a strong {
+      font-size: 0.7em;
+    }
+
+    #page-home .add a {
+      width: 100%;
+    }
 
     #page-create-point header {
         display: block;

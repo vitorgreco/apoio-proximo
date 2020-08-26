@@ -20,6 +20,7 @@ html {font-family: 'Balsamiq Sans', cursive;}
 body{
     background: #0564641a;
     -webkit-font-smoothing: antialiased;
+    width: 100%;
 }
 
 a {

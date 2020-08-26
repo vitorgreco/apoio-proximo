@@ -15,6 +15,10 @@
     margin: 10px;
 }
 
+#page-home .logo img {
+  width: 480px;
+}
+
 #page-home header h2 {
     font-size: 50px;
     padding-top: 30px;
