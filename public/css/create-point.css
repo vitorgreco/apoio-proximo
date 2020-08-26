@@ -1,7 +1,6 @@
 #page-create-point {
     width: 85%;
     margin: 0 auto;
-   
 }
 
 #page-create-point header {
@@ -12,22 +11,28 @@
     color: var(--text-color);
 }
 
-#page-create-point header h2 {
-    margin: 10px 150px 0 0;
+#page-create-point h2 {
+    margin: 30px;
+    text-align: center;
+    color: var(--text-color);
 } 
 
+#page-create-point header img {
+    width: 380px;
+}
+
 #page-create-point a {
-    width: 135px;
+    width: 115px;
     background: var(--primary-color);
     color: black;
-    font-weight: 700;
-    font-size: 25px;
-    height: 50px;
+    font-size: 20px;
+    height: 45px;
     border-radius: 15px;
     display: flex;
     align-items: center;
     transition: 1200ms;
 }
+
 #page-create-point a:hover {
     background-color: var(--after-color);
 }
@@ -43,8 +48,8 @@
 #page-create-point a span::after {
     content:"";
     background-image: url('/styles/undo-solid.svg');
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
 }
 #page-create-point a strong {
     flex: 1;
@@ -56,7 +61,9 @@ form {
     border-top: 40px;
     padding: 70px;
     border-radius: 8px;
-    width: 730px;
+    width: 100%;
+    max-width: 1200px;
+    min-width: 300px;
     box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
@@ -65,6 +72,7 @@ form {
 form h1 {
     font-size: 36px;
     color: var(--title-color);
+    text-align: center;
 }
 
 form fieldset {
@@ -122,16 +130,21 @@ form .field-group .field + .field {
 }
 
 form button {
-    width: 150px;
-    height: 56px;
+    width: 200px;
+    height: 60px;
     background-color: var(--primary-color);
     border-radius: 8px;
     color: black;
-    font-weight: bold;
-    font-size: 24px;
-    border: 0;
-    margin-top: 40px;
+    font-weight: 800;
+    font-size: 28px;
+    border: 2.5px solid black;
+    margin-top: 75px;
     transition: background-collor 1200ms;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
 }   
 
 form button:hover {
@@ -142,7 +155,7 @@ form button:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-
+    justify-items: center;
 }
 
 .items-grid li {

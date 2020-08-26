@@ -43,12 +43,8 @@
     }
 
     #page-home .content h2 {
-        font-size: 30px;
+        font-size: 40px;
         margin-top: 30px;
-    }
-
-    #page-home .add {
-        margin-top: 10px;
     }
 
     #page-home main {
@@ -60,6 +56,7 @@
         width: 100%;
         margin-top: 20px;
         grid-template-columns: 100%;
+        gap: 10px;
     }
 
     #page-home .button .search {
@@ -78,25 +75,55 @@
       font-size: 0.7em;
     }
 
+    #page-home .add {
+      margin-top: 10px;
+    }
+
     #page-home .add a {
       width: 100%;
     }
 
-    #page-create-point header {
-        display: block;
-        /* text-align: center;
-        transform: translateX(50%); */
-    }
-    #page-create-point a {
-        display: none;
-    }
-    #page-create-point header h2 {
-        display: none;
-    }
     #page-create-point header img {
-        display: flex;
-        width: 100%;
-        width: -webkit-fill-available;
+      width: 70%;
+    }
+
+    #page-create-point a {
+      width: 70px;
+      font-size: 15px;
+      height: 35px;
+    }
+
+    #page-create-point a span::after {
+      width: 15px;
+      height: 15px;
+    }
+
+    #page-create-point .content {
+      width: 80%;
+      align-items: center;
+      text-align: center;
+    }
+
+    #page-create-point form {
+      padding: 25px;
+    }
+
+    #page-create-point form .field-group{
+      display: block;
+    }
+
+    #page-create-point form .field-group .field + .field {
+      margin-left: unset;
+    }
+
+    #page-create-point .items-grid li {
+      height: 120px;
+      width: 100px;
+      padding: 18px 6px 4px;
+    }
+
+    #page-create-point .items-grid li img {
+      height: 65px;
     }
 
     #page-search-results main .cards {
@@ -107,12 +134,48 @@
         height: 200px;
     }
 
-    #page-search-results header {
-        display: block;
-        text-align: center;
+    #page-search-results header img {
+      width: 70%;
     }
 
-    #page-search-results header a {
-        
+    #page-search-results a {
+      width: 70px;
+      font-size: 15px;
+      height: 35px;
     }
+
+    #page-search-results a span::after {
+      width: 15px;
+      height: 15px;
+    }
+
+    #page-search-results main .cards {
+      grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 500px) {
+  
+  #page-create-point .items-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #page-create-point form legend {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 360px) {
+
+  #page-create-point .items-grid li {
+    height: 100px;
+    width: 80px;
+    padding: 18px 6px 4px;
+  }
+
+  #page-create-point .items-grid li img {
+    height: 50px;
+  }
 }
