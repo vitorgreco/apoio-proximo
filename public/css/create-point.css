@@ -1,10 +1,10 @@
 #page-create-point {
     width: 85%;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 #page-create-point header {
-    margin: 50px 0 20px 0;
+    margin: 20px 0 20px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -12,9 +12,9 @@
 }
 
 #page-create-point h2 {
-    margin: 30px;
     text-align: center;
     color: var(--text-color);
+    margin-bottom: 25px;
 } 
 
 #page-create-point header img {
@@ -56,7 +56,7 @@
     text-align: center;
 }
 
-form {
+#page-create-point form {
     background-color: white;
     border-top: 40px;
     padding: 70px;
@@ -69,39 +69,39 @@ form {
     margin-right: auto;
 }
 
-form h1 {
+#page-create-point form h1 {
     font-size: 36px;
     color: var(--title-color);
     text-align: center;
 }
 
-form fieldset {
+#page-create-point form fieldset {
     margin-top: 20px;
     border: 0;
 }
 
-form legend h2 {
+#page-create-point form legend h2 {
     font-size: 24px;
     margin-bottom: 20px;
 }
-form legend {
+#page-create-point form legend {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
 }
-form legend p {
+#page-create-point form legend p {
     font-size: 16px;
     color: var(--text-color);
 }
 
-form .field {
+#page-create-point form .field {
     display: flex;
     flex: 1;
     flex-direction: column;
     margin-bottom: 24px;
 }
-form .field-group {
+#page-create-point form .field-group {
     display: flex;
 }
 
@@ -180,7 +180,7 @@ form button:hover {
 }
 
 .items-grid li span {
-    color: var(--text-color);
+    color: black;
 
     margin-top: 12px;
     text-align: center;

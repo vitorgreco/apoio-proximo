@@ -165,6 +165,10 @@
     display: block;
     margin-bottom: 10px;
   }
+
+  #page-create-point form legend p {
+    text-align: center;
+  }
 }
 
 @media (max-width: 360px) {
