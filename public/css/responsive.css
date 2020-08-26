@@ -1,4 +1,4 @@
-@media (max-width: 1000px) {
+@media (max-width: 738px) {
  
     #page-home .img {
         position: initial;
@@ -65,4 +65,12 @@
         height: 200px;
     }
 
+    #page-search-results header {
+        display: block;
+        text-align: center;
+    }
+
+    #page-search-results header a {
+        
+    }
 }
