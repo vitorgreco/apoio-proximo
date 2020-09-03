@@ -18,6 +18,7 @@
 #modal .content {
     color: white;
     width: 420px;
+    max-width: 80%;
 }
 
 #modal .header {
